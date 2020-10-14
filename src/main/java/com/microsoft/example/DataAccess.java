@@ -40,6 +40,7 @@ public class DataAccess
 			}
 		}
 		catch (Exception ex) {
+			System.out.println(ex);
 			// Eh.... just give up
             ex.printStackTrace();
 			throw new ExceptionInInitializerError(ex.toString());
